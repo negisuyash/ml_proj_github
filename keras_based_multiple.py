@@ -124,7 +124,10 @@ def train_data(new_hub_name=None,add_hub=False):
 			#TILL HERE
 			
 			print('GENERATING VECTORS for %s:'%list_of_hubs[i] )
-			for k,j in zip(temp_training_data['breaked_addr'],tqdm(range(len(temp_training_data['breaked_addr'])))):
+			count=0
+			for k in temp_training_data['breaked_addr']:
+				print(count)
+				count+=1
 				input_list.append(preprocess_add.PreProcess_Add(str(k)))
 
 		
