@@ -51,8 +51,8 @@ def train_data(new_hub_name=None,add_hub=False):
 	df=pd.read_csv('./datasets/train_data_prep.csv',usecols=['breaked_addr','d_hub','loc'])
 	df=df.dropna()
 	df=df.loc[:20700]
-	if add_hub is False:
-		os.system('del multimodels\*.SPIDERN3MO')
+	#if add_hub is False:
+	#	os.system('del multimodels\*.SPIDERN3MO')
 	
 	
 	
